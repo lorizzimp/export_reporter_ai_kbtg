@@ -142,14 +142,14 @@ order by so.id desc, sol."sequence" ;]]>
 			<staticText>
 				<reportElement x="348" y="0" width="207" height="25" uuid="273b7d12-1c13-4159-8000-fad6eb8ef429"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="16" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="16" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[บริษัท โอคอนเทค จํากัด]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="348" y="25" width="207" height="30" uuid="f75b0813-c96f-4c57-8fa7-92484d266f52"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="10" isBold="false" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="10" isBold="false" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[1023 อาคาร TPS., ห้อง 3/9-10, ถนนพัฒนาการ, แขวงสวนหลวง
 เขตสวนหลวง กรุงเทพฯ 10250]]></text>
@@ -157,70 +157,70 @@ order by so.id desc, sol."sequence" ;]]>
 			<staticText>
 				<reportElement x="348" y="55" width="207" height="20" uuid="2bee5a4f-27d7-4e65-b802-ca8a1170eb16"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="12" isBold="false" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" isBold="false" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[โทร : (+66) 2 -717-8140 อีเมล์ : info@okontek.com]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="75" width="555" height="21" uuid="0e7ca352-1736-41cd-b9b6-11445ca36362"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="14" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[ใบเสนอราคา/ Quotation]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="95" width="100" height="21" uuid="3fde2c32-dd0a-4e34-b412-11445d37d41a"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[ถึง / To :]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="115" width="100" height="21" uuid="e2bf9e94-b787-4d97-80d0-e8cdef3d10dd"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[เรียน / Attn :]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="362" y="95" width="55" height="21" uuid="1652323e-cc07-48ea-8f99-6b18d4281d09"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[เลขที่ / NO]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="493" y="95" width="32" height="21" uuid="b7eaf7dc-bd44-4f86-b809-322f402cac3e"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[Rev : ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="362" y="115" width="55" height="21" uuid="906b56bb-0460-4a31-b8a0-45bd4e76f383"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[วันที่ / Date]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="136" width="143" height="20" uuid="0fa35ab7-3e53-48df-8ba6-ddd44d7a7b02"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[ชื่อโครงการ / Project Name :]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="362" y="135" width="66" height="21" uuid="408fe2b1-03ef-467b-bdd6-d83c64a5e668"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[ยืนราคาถึงวันที่]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
 				<reportElement x="419" y="95" width="74" height="21" uuid="09f842c8-5e8c-4933-9352-c5718222dec7"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{so_name}]]></textFieldExpression>
@@ -228,7 +228,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField isBlankWhenNull="true">
 				<reportElement x="524" y="95" width="30" height="21" uuid="13e9914e-789e-411d-ad89-bb541d2f1b6b"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{revision}]]></textFieldExpression>
@@ -236,7 +236,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="419" y="115" width="74" height="21" uuid="0c2fe372-7ffc-4b9d-8e8f-cfe14ce968d7"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{date_order}]]></textFieldExpression>
@@ -244,7 +244,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="432" y="135" width="74" height="21" uuid="b4347620-c372-41b0-a014-7b75f78c9f20"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{date_expire}]]></textFieldExpression>
@@ -252,7 +252,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField isBlankWhenNull="true">
 				<reportElement x="99" y="95" width="264" height="21" uuid="6054746f-2deb-478f-a0a4-2f6aabbe3c5a"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{partner_name}]]></textFieldExpression>
@@ -260,7 +260,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField isBlankWhenNull="true">
 				<reportElement x="99" y="115" width="264" height="21" uuid="a1c17023-1ab6-4708-8212-17fcec49a51c"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{partner_ref}]]></textFieldExpression>
@@ -268,7 +268,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField isBlankWhenNull="true">
 				<reportElement x="142" y="136" width="200" height="20" uuid="96a75a94-39e7-4716-99fc-24ef6f95ab2d"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{project_name}]]></textFieldExpression>
@@ -284,98 +284,98 @@ order by so.id desc, sol."sequence" ;]]>
 			<staticText>
 				<reportElement x="0" y="0" width="32" height="20" uuid="7cc6ed01-e3ac-4664-b3f9-ba6eacc06848"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[ลำดับ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="19" width="32" height="20" uuid="b5a65975-0f87-4113-ba1b-57fa99d6719d"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[No]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="32" y="19" width="68" height="20" uuid="f301c696-e0c1-423e-97ca-026d5e98a977"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[Part No.]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="32" y="0" width="68" height="20" uuid="b00aec01-3a96-4207-922a-fd6ad5e00520"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[รหัส]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="100" y="19" width="199" height="20" uuid="8a6c6221-a904-43d8-8fd8-18d6af931680"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[Description]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="100" y="0" width="199" height="20" uuid="ed4426d0-8c98-4c87-a9d4-cb35e2c89402"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[รายการ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="299" y="0" width="64" height="20" uuid="1a308065-e5cc-4067-a992-fe522e4335bc"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[จำนวน]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="299" y="19" width="64" height="20" uuid="ca1007bd-9ef5-48be-a293-074de09b83ba"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[Qty]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="363" y="0" width="64" height="20" uuid="1930af42-2605-4053-a501-b63d767ea43d"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[ราคา]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="363" y="19" width="64" height="20" uuid="cadcf942-f9e2-4aab-9786-553dcdf73ea8"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[Unit price]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="427" y="0" width="64" height="20" uuid="8373cdcd-0718-4c9e-bf4c-0a2e5f792c23"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[จำนวนเงิน]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="427" y="19" width="64" height="20" uuid="c9c85ecf-5cb3-4637-ab3e-b6ae9a687bcf"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[Amount]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="491" y="19" width="64" height="20" uuid="c1b78f7d-e9c1-4a77-a762-562b92d8ed92"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[remarks]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="491" y="0" width="64" height="20" uuid="c0416eb9-20b3-4e70-86f5-378cef069031"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[หมายเหตุ]]></text>
 			</staticText>
@@ -386,7 +386,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField>
 				<reportElement x="0" y="0" width="32" height="20" uuid="d89d143d-fe60-4e97-9b46-1b48da6525b1"/>
 				<textElement textAlignment="Right">
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
@@ -397,7 +397,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField isBlankWhenNull="true">
 				<reportElement x="32" y="0" width="68" height="20" uuid="b34873af-4893-49df-8a39-fa7292467cb4"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph leftIndent="5"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{product_code}]]></textFieldExpression>
@@ -405,7 +405,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField isStretchWithOverflow="true">
 				<reportElement x="100" y="0" width="199" height="20" uuid="909c0cb7-cfd3-42d2-bc6d-9f621dfc8bbc"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph leftIndent="5"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{product_description}]]></textFieldExpression>
@@ -413,14 +413,14 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField pattern="#,##0">
 				<reportElement x="299" y="0" width="64" height="20" uuid="8b41a466-464b-48e0-9bcf-79eb069419a1"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00">
 				<reportElement x="363" y="0" width="64" height="20" uuid="15db42b1-47ae-4ce1-8497-c3bf48c239b6"/>
 				<textElement textAlignment="Right">
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="3"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{price_unit}]]></textFieldExpression>
@@ -428,7 +428,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField pattern="#,##0.00">
 				<reportElement x="427" y="0" width="64" height="20" uuid="2b6e2216-f778-427c-b38c-dd742d45f30d"/>
 				<textElement textAlignment="Right">
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="3"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{price_subtotal}]]></textFieldExpression>
@@ -436,7 +436,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField isBlankWhenNull="true">
 				<reportElement x="491" y="0" width="64" height="20" uuid="6beb0dd8-1668-47d5-9536-2af158791626"/>
 				<textElement textAlignment="Right">
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{product_code}]]></textFieldExpression>
@@ -448,49 +448,49 @@ order by so.id desc, sol."sequence" ;]]>
 			<staticText>
 				<reportElement x="32" y="22" width="158" height="20" uuid="7a553358-35d5-419c-830d-c965b1469957"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="12" isBold="true" isUnderline="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" isBold="true" isUnderline="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[- เงื่อนไขการชําระเงิน :]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="3" y="42" width="100" height="18" uuid="58f603a3-72b8-41d9-ad56-49faf562ef24"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="TH Sarabun New" size="12" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[จำนวนเงิน (บาท) : ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="374" y="2" width="100" height="20" uuid="c56f0b21-7603-45a9-895d-57253802f40d"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="TH Sarabun New" size="12" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[มูลค่าสินค้า]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="374" y="21" width="100" height="20" uuid="b7e305a5-1662-4eb4-8837-4410d56a7a7a"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="TH Sarabun New" size="12" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[ภาษีมูลค่าเพิ่ม 7%]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="374" y="40" width="100" height="20" uuid="d06588cd-587a-4e55-a97b-29c69a3aa59f"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="TH Sarabun New" size="12" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[รวมเป็นเงิน]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="32" y="2" width="41" height="20" uuid="c4bb3a61-a47e-444e-8c63-d5542385a87e"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" isBold="true" isUnderline="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" isBold="true" isUnderline="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[หมายเหตุ :]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="31" y="62" width="100" height="18" uuid="b633b782-1742-43c6-9dc6-f85ad8f13382"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[ผู้เสนอราคา]]></text>
 			</staticText>
@@ -500,42 +500,42 @@ order by so.id desc, sol."sequence" ;]]>
 			<staticText>
 				<reportElement x="408" y="123" width="100" height="18" uuid="0b057fcb-28c9-4f40-b6a9-50d1f0436cae"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[ผู้มีอํานาจในการสั่งซื้อ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="385" y="143" width="148" height="18" uuid="e0e8e877-831d-428d-a56e-5b86e5c5f600"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="12" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[วันที่ / Date ______________]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="166" y="85" width="196" height="65" uuid="9f6b6783-1cea-476c-832c-0824367859a2"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="TH Sarabun New" size="20" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="20" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[https://www.okontek.com]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="413" y="161" width="80" height="20" uuid="d2165065-1471-4edc-8fe9-228c40e77a33"/>
 				<textElement textAlignment="Right">
-					<font fontName="TH Sarabun New" size="14" isBold="false" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="false" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
 				<reportElement x="493" y="161" width="40" height="20" uuid="4b15ff65-3a76-4cd0-8be1-971c2ff17e32"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" isBold="false" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="false" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00">
 				<reportElement x="473" y="2" width="82" height="20" uuid="3e61b76a-e2cd-45fa-a0ab-54919b9a38ab"/>
 				<textElement textAlignment="Right">
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{amount_untaxed}]]></textFieldExpression>
@@ -543,7 +543,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField pattern="#,##0.00">
 				<reportElement x="473" y="21" width="82" height="20" uuid="ae417af8-a022-4460-aa24-c455f65d312a"/>
 				<textElement textAlignment="Right">
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{amount_tax}]]></textFieldExpression>
@@ -551,7 +551,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField pattern="#,##0.00">
 				<reportElement x="473" y="40" width="82" height="20" uuid="d42a1944-c094-4c83-82a3-b18982f4fda7"/>
 				<textElement textAlignment="Right">
-					<font fontName="TH Sarabun New" size="14" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{amount_total}]]></textFieldExpression>
@@ -559,7 +559,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField pattern="">
 				<reportElement x="22" y="95" width="120" height="20" uuid="e6eedb52-2d12-40e0-a3da-820e0ca73757"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="14" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{user_request}]]></textFieldExpression>
@@ -567,7 +567,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField pattern="" isBlankWhenNull="true">
 				<reportElement x="134" y="21" width="120" height="20" uuid="7b38e4b7-899c-4b03-84b5-3294e670c7ee"/>
 				<textElement verticalAlignment="Top">
-					<font fontName="TH Sarabun New" size="14" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{payment_term}]]></textFieldExpression>
@@ -575,7 +575,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField isStretchWithOverflow="true">
 				<reportElement x="70" y="42" width="199" height="20" uuid="a734712a-12de-4a5c-b452-bfb006504700"/>
 				<textElement>
-					<font fontName="TH Sarabun New" size="14" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph leftIndent="5"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{prm_amount_total}]]></textFieldExpression>
@@ -583,7 +583,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField pattern="">
 				<reportElement x="22" y="110" width="120" height="20" uuid="980833df-403d-4f2a-b8ee-304d340b15cf"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="14" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{user_function}]]></textFieldExpression>
@@ -591,7 +591,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField pattern="">
 				<reportElement x="22" y="125" width="120" height="20" uuid="81a90034-c796-4852-87a7-da1894e6ac63"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="14" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{user_mobile}]]></textFieldExpression>
@@ -599,7 +599,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<textField pattern="">
 				<reportElement x="22" y="140" width="120" height="20" uuid="333e1fb0-90d7-41d9-ac76-1800ed3a25de"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="14" isBold="true" pdfFontName="TH Sarabun New" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{user_email}]]></textFieldExpression>
@@ -610,14 +610,14 @@ order by so.id desc, sol."sequence" ;]]>
 			<staticText>
 				<reportElement x="385" y="104" width="10" height="18" uuid="3d72036d-886b-447a-bb53-797a3beccd6b"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" isBold="true"/>
+					<font fontName="THSarabunNew" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[(]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="515" y="104" width="10" height="18" uuid="42de11e2-59cd-45b4-a3b6-abab9443e664"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" isBold="true"/>
+					<font fontName="THSarabunNew" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[)]]></text>
 			</staticText>
