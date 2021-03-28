@@ -619,14 +619,14 @@ order by so.id desc, sol."sequence" ;]]>
 			<staticText>
 				<reportElement x="385" y="141" width="10" height="18" uuid="3d72036d-886b-447a-bb53-797a3beccd6b"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" isBold="true"/>
+					<font fontName="THSarabunNew" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[(]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="515" y="141" width="10" height="18" uuid="42de11e2-59cd-45b4-a3b6-abab9443e664"/>
 				<textElement textAlignment="Center">
-					<font fontName="TH Sarabun New" size="12" isBold="true"/>
+					<font fontName="THSarabunNew" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[)]]></text>
 			</staticText>

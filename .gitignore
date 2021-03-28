@@ -30,3 +30,4 @@ hs_err_pid*
 target/*
 target/classes/META-INF/maven/com.evobox/reportexporter/pom.properties
 target/classes/META-INF/maven/com.evobox/reportexporter/pom.xml
+*.MF
