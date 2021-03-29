@@ -19,7 +19,7 @@ import com.evobox.reportexporter.utils.BahtText;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@RequestMapping(value = "/1.0/report", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/1.0/report", produces = "application/pdf")
 @Slf4j
 public class ReportExporterController {
 	
@@ -31,7 +31,7 @@ public class ReportExporterController {
 		try {
 			prepare();
 			String amountTotal = param.get("prm_amount_total").toString();
-			param.put("logo", ImageIO.read(getClass().getResource("/icon.png")));
+			param.put("logo", ImageIO.read(getClass().getResource("/okontek logo white.jpg")));
 			param.put("prm_amount_total", BahtText.getBahtTextByString(amountTotal));
 			param.put("prm_id", Integer.parseInt(param.get("prm_id").toString()));
 			
@@ -54,8 +54,8 @@ public class ReportExporterController {
 	
 	        HttpHeaders headers = new HttpHeaders();
 	        headers.setContentType(MediaType.APPLICATION_PDF);
-	        String filename = "sale_internal";
-	        headers.setContentDispositionFormData(filename, filename);
+	        String filename = reportName+".pdf";
+	        headers.add("content-disposition", "inline; filename=" + filename);
 	        headers.setCacheControl("must-revalidate, post-check=0, pre-check=0");
 	        response = new ResponseEntity<>(contents, headers, HttpStatus.OK);
 		} catch (Exception e) {
