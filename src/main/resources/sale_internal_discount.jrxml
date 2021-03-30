@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sale_internal_discount" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2bc3f60-bfd3-4491-9dc0-b1448540177d">
-	<property name="ireport.zoom" value="2.5937424601000134"/>
-	<property name="ireport.x" value="199"/>
-	<property name="ireport.y" value="575"/>
+	<property name="ireport.zoom" value="1.464100000000007"/>
+	<property name="ireport.x" value="141"/>
+	<property name="ireport.y" value="540"/>
 	<parameter name="prm_amount_total" class="java.lang.String"/>
 	<parameter name="logo" class="java.lang.Object"/>
 	<parameter name="prm_id" class="java.lang.Integer"/>
@@ -28,8 +28,16 @@
 	so.amount_total amount_total,
 	sol.remark remark,
 	rp_users.name user_request,
+	rp_users.function user_function,
+	rp_users.mobile user_mobile,
+	rp_users.email user_email,
 	apt.name payment_term,
-	so.note note
+	so.note note,
+	t.display_name company_name,
+	t.street company_street,
+	t.street2 company_street2,
+	t.phone company_phone,
+	t.email company_email
 from sale_order so
 inner join sale_order_line sol on (sol.order_id = so.id)
 left join account_payment_term apt on (apt.id = so.payment_term_id)
@@ -39,6 +47,7 @@ left join res_partner rp on (rp.id = so.partner_id)
 left join res_users ru on (ru.id = so.user_id)
 left join res_partner rp_users on (rp_users.id = ru.partner_id)
 left join project_project project on (project.id = so.project_id)
+inner join (select * from res_partner where id = 1) t on (t.id = 1)
 where so.id = $P{prm_id}
 order by so.id desc, sol."sequence" ;]]>
 	</queryString>
@@ -63,6 +72,11 @@ order by so.id desc, sol."sequence" ;]]>
 	<field name="user_request" class="java.lang.String"/>
 	<field name="payment_term" class="java.lang.String"/>
 	<field name="note" class="java.lang.String"/>
+	<field name="company_name" class="java.lang.String"/>
+	<field name="company_street" class="java.lang.String"/>
+	<field name="company_street2" class="java.lang.String"/>
+	<field name="company_phone" class="java.lang.String"/>
+	<field name="company_email" class="java.lang.String"/>
 	<variable name="so_name_1" class="java.lang.Integer" resetType="Page" calculation="Count">
 		<variableExpression><![CDATA[$F{so_name}]]></variableExpression>
 	</variable>
@@ -120,28 +134,6 @@ order by so.id desc, sol."sequence" ;]]>
 	</background>
 	<pageHeader>
 		<band height="156" splitType="Stretch">
-			<staticText>
-				<reportElement x="348" y="0" width="207" height="25" uuid="273b7d12-1c13-4159-8000-fad6eb8ef429"/>
-				<textElement>
-					<font fontName="THSarabunNew" size="16" isBold="true"/>
-				</textElement>
-				<text><![CDATA[บริษัท โอคอนเทค จํากัด]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="348" y="25" width="207" height="30" uuid="f75b0813-c96f-4c57-8fa7-92484d266f52"/>
-				<textElement>
-					<font fontName="THSarabunNew" size="10" isBold="false"/>
-				</textElement>
-				<text><![CDATA[1023 อาคาร TPS., ห้อง 3/9-10, ถนนพัฒนาการ, แขวงสวนหลวง
-เขตสวนหลวง กรุงเทพฯ 10250]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="348" y="55" width="207" height="20" uuid="2bee5a4f-27d7-4e65-b802-ca8a1170eb16"/>
-				<textElement>
-					<font fontName="THSarabunNew" size="12" isBold="false"/>
-				</textElement>
-				<text><![CDATA[โทร : (+66) 2 -717-8140 อีเมล์ : info@okontek.com]]></text>
-			</staticText>
 			<staticText>
 				<reportElement x="0" y="75" width="555" height="40" uuid="0e7ca352-1736-41cd-b9b6-11445ca36362"/>
 				<textElement textAlignment="Center">
@@ -258,6 +250,32 @@ order by so.id desc, sol."sequence" ;]]>
 				<reportElement x="3" y="0" width="115" height="75" uuid="a4a01297-fd3b-475b-87b4-9cf928fb9b93"/>
 				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
 			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="349" y="55" width="207" height="20" uuid="969e62d0-46d9-4bd8-9d95-921711eaa12f"/>
+				<textElement>
+					<font fontName="THSarabunNew" size="12" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<paragraph rightIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["โทร : "+$F{company_phone}+" email : "+$F{company_email}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="349" y="0" width="207" height="25" uuid="30a9b860-7519-49fc-a747-2a829c469f8b"/>
+				<textElement>
+					<font fontName="THSarabunNew" size="16" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<paragraph rightIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="349" y="25" width="207" height="30" uuid="08e58efb-f7f4-45b2-bbdb-400e9e831fdb"/>
+				<textElement>
+					<font fontName="THSarabunNew" size="10" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<paragraph rightIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company_street}
++"\n"
++$F{company_street2}]]></textFieldExpression>
+			</textField>
 		</band>
 	</pageHeader>
 	<columnHeader>
@@ -526,14 +544,14 @@ order by so.id desc, sol."sequence" ;]]>
 			</staticText>
 			<textField>
 				<reportElement x="413" y="196" width="80" height="20" uuid="d2165065-1471-4edc-8fe9-228c40e77a33"/>
-				<textElement textAlignment="Right">
+				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="THSarabunNew" size="14" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
 				<reportElement x="493" y="196" width="40" height="20" uuid="4b15ff65-3a76-4cd0-8be1-971c2ff17e32"/>
-				<textElement>
+				<textElement verticalAlignment="Middle">
 					<font fontName="THSarabunNew" size="14" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
