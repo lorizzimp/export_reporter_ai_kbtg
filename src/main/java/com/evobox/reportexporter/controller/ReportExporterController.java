@@ -31,7 +31,7 @@ public class ReportExporterController {
 		try {
 			prepare();
 			String amountTotal = param.get("prm_amount_total").toString();
-			param.put("logo", ImageIO.read(getClass().getResource("/okontek logo white.jpg")));
+			param.put("logo", ImageIO.read(getClass().getResource("/LOGO OKONTEK-01.png")));
 			param.put("prm_amount_total", BahtText.getBahtTextByString(amountTotal));
 			param.put("prm_id", Integer.parseInt(param.get("prm_id").toString()));
 			

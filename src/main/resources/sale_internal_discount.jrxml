@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sale_internal_discount" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2bc3f60-bfd3-4491-9dc0-b1448540177d">
-	<property name="ireport.zoom" value="1.464100000000007"/>
-	<property name="ireport.x" value="141"/>
-	<property name="ireport.y" value="540"/>
+	<property name="ireport.zoom" value="1.9487171000000123"/>
+	<property name="ireport.x" value="235"/>
+	<property name="ireport.y" value="456"/>
 	<parameter name="prm_amount_total" class="java.lang.String"/>
 	<parameter name="logo" class="java.lang.Object"/>
 	<parameter name="prm_id" class="java.lang.Integer"/>
@@ -92,48 +92,22 @@ order by so.id desc, sol."sequence" ;]]>
 				<reportElement x="0" y="195" width="555" height="1" uuid="8c3d3e7f-a8b1-4c5a-a529-d6c0fde0ce2c"/>
 			</line>
 			<line>
-				<reportElement x="0" y="666" width="370" height="1" uuid="f1e7836b-69d5-4681-9bd1-f1841e8b6bc1"/>
-			</line>
-			<line>
-				<reportElement x="0" y="586" width="555" height="1" uuid="053d66b9-3082-4693-810d-3cb50f8ad468"/>
-			</line>
-			<line>
-				<reportElement x="370" y="587" width="1" height="96" uuid="f46d2db0-ae21-41cd-a43a-b1c1d95b71db"/>
-			</line>
-			<line>
-				<reportElement x="370" y="682" width="185" height="1" uuid="fc85082c-0c91-40a0-8e33-355677c18fc1"/>
-			</line>
-			<line>
-				<reportElement x="370" y="666" width="185" height="1" uuid="6759d555-cfc4-475f-916c-c67df0d00805"/>
-			</line>
-			<line>
-				<reportElement x="370" y="646" width="185" height="1" uuid="a2d2be96-1555-4990-83d4-7e24eb225aef"/>
-			</line>
-			<line>
-				<reportElement x="452" y="587" width="1" height="96" uuid="b3b4ae51-da89-4a79-bbf6-eea884e5306c"/>
-			</line>
-			<line>
 				<reportElement x="0" y="156" width="1" height="630" uuid="d47710ac-7099-4ad4-a107-1aedde355a8a"/>
 			</line>
 			<line>
 				<reportElement x="555" y="156" width="1" height="630" uuid="619dca2c-2c69-401a-b58d-e459ba8ad123"/>
 			</line>
 			<line>
-				<reportElement x="0" y="682" width="371" height="1" uuid="3ed306f5-427f-440e-bcd2-793b3629c8e6"/>
-			</line>
-			<line>
 				<reportElement x="0" y="785" width="555" height="1" uuid="02a1de39-8522-48ba-be8c-56e18d5052b6"/>
-			</line>
-			<line>
-				<reportElement x="371" y="606" width="185" height="1" uuid="f9d9ffae-f3f2-46d4-a535-9f77ee2369de"/>
-			</line>
-			<line>
-				<reportElement x="371" y="626" width="185" height="1" uuid="ba8ef18b-ae0b-45c6-979a-38583032315d"/>
 			</line>
 		</band>
 	</background>
 	<pageHeader>
 		<band height="156" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement x="30" y="-40" width="273" height="156" uuid="a4a01297-fd3b-475b-87b4-9cf928fb9b93"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
 			<staticText>
 				<reportElement x="0" y="75" width="555" height="40" uuid="0e7ca352-1736-41cd-b9b6-11445ca36362"/>
 				<textElement textAlignment="Center">
@@ -246,10 +220,6 @@ order by so.id desc, sol."sequence" ;]]>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{project_name}]]></textFieldExpression>
 			</textField>
-			<image scaleImage="FillFrame">
-				<reportElement x="3" y="0" width="115" height="75" uuid="a4a01297-fd3b-475b-87b4-9cf928fb9b93"/>
-				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
-			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="349" y="55" width="207" height="20" uuid="969e62d0-46d9-4bd8-9d95-921711eaa12f"/>
 				<textElement>
@@ -467,14 +437,14 @@ order by so.id desc, sol."sequence" ;]]>
 	<pageFooter>
 		<band height="216" splitType="Stretch">
 			<staticText>
-				<reportElement x="3" y="51" width="90" height="20" uuid="7a553358-35d5-419c-830d-c965b1469957"/>
-				<textElement>
+				<reportElement x="3" y="62" width="90" height="20" uuid="7a553358-35d5-419c-830d-c965b1469957"/>
+				<textElement verticalAlignment="Bottom">
 					<font fontName="THSarabunNew" size="12" isBold="true" isUnderline="true"/>
 				</textElement>
 				<text><![CDATA[- เงื่อนไขการชําระเงิน :]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="3" y="80" width="100" height="18" uuid="58f603a3-72b8-41d9-ad56-49faf562ef24"/>
+				<reportElement x="3" y="80" width="100" height="20" uuid="58f603a3-72b8-41d9-ad56-49faf562ef24"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="THSarabunNew" size="12" isBold="true"/>
 				</textElement>
@@ -488,21 +458,21 @@ order by so.id desc, sol."sequence" ;]]>
 				<text><![CDATA[มูลค่าสินค้าหลังลด]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="374" y="59" width="100" height="20" uuid="b7e305a5-1662-4eb4-8837-4410d56a7a7a"/>
+				<reportElement x="374" y="60" width="100" height="20" uuid="b7e305a5-1662-4eb4-8837-4410d56a7a7a"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="THSarabunNew" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ภาษีมูลค่าเพิ่ม 7%]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="374" y="78" width="100" height="20" uuid="d06588cd-587a-4e55-a97b-29c69a3aa59f"/>
+				<reportElement x="374" y="80" width="100" height="20" uuid="d06588cd-587a-4e55-a97b-29c69a3aa59f"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="THSarabunNew" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[รวมเป็นเงิน]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="3" y="2" width="41" height="20" uuid="c4bb3a61-a47e-444e-8c63-d5542385a87e"/>
+				<reportElement x="3" y="0" width="41" height="20" uuid="c4bb3a61-a47e-444e-8c63-d5542385a87e"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12" isBold="true" isUnderline="true"/>
 				</textElement>
@@ -558,23 +528,23 @@ order by so.id desc, sol."sequence" ;]]>
 			</textField>
 			<textField pattern="#,##0.00">
 				<reportElement x="473" y="40" width="82" height="20" uuid="3e61b76a-e2cd-45fa-a0ab-54919b9a38ab"/>
-				<textElement textAlignment="Right">
+				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{amount_untaxed}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00">
-				<reportElement x="473" y="59" width="82" height="20" uuid="ae417af8-a022-4460-aa24-c455f65d312a"/>
-				<textElement textAlignment="Right">
+				<reportElement x="473" y="60" width="82" height="20" uuid="ae417af8-a022-4460-aa24-c455f65d312a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{amount_tax}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00">
-				<reportElement x="473" y="78" width="82" height="20" uuid="d42a1944-c094-4c83-82a3-b18982f4fda7"/>
-				<textElement textAlignment="Right">
+				<reportElement x="473" y="80" width="82" height="20" uuid="d42a1944-c094-4c83-82a3-b18982f4fda7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
@@ -589,8 +559,8 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{user_request}]]></textFieldExpression>
 			</textField>
 			<textField pattern="" isBlankWhenNull="true">
-				<reportElement x="92" y="51" width="120" height="20" uuid="7b38e4b7-899c-4b03-84b5-3294e670c7ee"/>
-				<textElement verticalAlignment="Top">
+				<reportElement x="92" y="62" width="120" height="20" uuid="7b38e4b7-899c-4b03-84b5-3294e670c7ee"/>
+				<textElement verticalAlignment="Bottom">
 					<font fontName="THSarabunNew" size="14" isBold="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
@@ -598,50 +568,80 @@ order by so.id desc, sol."sequence" ;]]>
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement x="70" y="80" width="304" height="20" uuid="a734712a-12de-4a5c-b452-bfb006504700"/>
-				<textElement>
-					<font fontName="THSarabunNew" size="14" isBold="true"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="THSarabunNew" size="12" isBold="true"/>
 					<paragraph leftIndent="5"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{prm_amount_total}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00">
-				<reportElement x="473" y="21" width="82" height="20" uuid="26b36f15-55f3-484c-ace2-8595032bd79c"/>
-				<textElement textAlignment="Right">
+				<reportElement x="473" y="20" width="82" height="20" uuid="26b36f15-55f3-484c-ace2-8595032bd79c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{sum_discount}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="374" y="21" width="100" height="20" uuid="e43479aa-5c89-4006-aff6-64f1361c9edf"/>
+				<reportElement x="374" y="20" width="100" height="20" uuid="e43479aa-5c89-4006-aff6-64f1361c9edf"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="THSarabunNew" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ส่วนลด]]></text>
 			</staticText>
 			<textField pattern="#,##0.00">
-				<reportElement x="473" y="2" width="82" height="20" uuid="0c0a1f49-6e1a-4642-a855-f779dd0780ba"/>
-				<textElement textAlignment="Right">
+				<reportElement x="473" y="0" width="82" height="20" uuid="0c0a1f49-6e1a-4642-a855-f779dd0780ba"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{amount_untaxed}+$V{sum_discount}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="374" y="2" width="100" height="20" uuid="4bd4b301-0b17-4815-88c4-3a56d9fb0a4e"/>
+				<reportElement x="374" y="0" width="100" height="20" uuid="4bd4b301-0b17-4815-88c4-3a56d9fb0a4e"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="THSarabunNew" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[มูลค่าสินค้า]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="44" y="2" width="291" height="48" isPrintWhenDetailOverflows="true" uuid="ecd123c6-b6e9-4f13-82d5-9762f3923676"/>
+				<reportElement x="44" y="2" width="291" height="60" isPrintWhenDetailOverflows="true" uuid="ecd123c6-b6e9-4f13-82d5-9762f3923676"/>
 				<textElement>
-					<font fontName="THSarabunNew" size="14"/>
+					<font fontName="THSarabunNew" size="10"/>
 					<paragraph leftIndent="5"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{note}]]></textFieldExpression>
 			</textField>
+			<line>
+				<reportElement x="0" y="80" width="370" height="1" uuid="f1e7836b-69d5-4681-9bd1-f1841e8b6bc1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="053d66b9-3082-4693-810d-3cb50f8ad468"/>
+			</line>
+			<line>
+				<reportElement x="370" y="1" width="1" height="99" uuid="f46d2db0-ae21-41cd-a43a-b1c1d95b71db"/>
+			</line>
+			<line>
+				<reportElement x="370" y="100" width="185" height="1" uuid="fc85082c-0c91-40a0-8e33-355677c18fc1"/>
+			</line>
+			<line>
+				<reportElement x="370" y="80" width="185" height="1" uuid="6759d555-cfc4-475f-916c-c67df0d00805"/>
+			</line>
+			<line>
+				<reportElement x="370" y="60" width="185" height="1" uuid="a2d2be96-1555-4990-83d4-7e24eb225aef"/>
+			</line>
+			<line>
+				<reportElement x="452" y="1" width="1" height="99" uuid="b3b4ae51-da89-4a79-bbf6-eea884e5306c"/>
+			</line>
+			<line>
+				<reportElement x="0" y="100" width="371" height="1" uuid="3ed306f5-427f-440e-bcd2-793b3629c8e6"/>
+			</line>
+			<line>
+				<reportElement x="371" y="20" width="185" height="1" uuid="f9d9ffae-f3f2-46d4-a535-9f77ee2369de"/>
+			</line>
+			<line>
+				<reportElement x="371" y="40" width="185" height="1" uuid="ba8ef18b-ae0b-45c6-979a-38583032315d"/>
+			</line>
 		</band>
 	</pageFooter>
 </jasperReport>
