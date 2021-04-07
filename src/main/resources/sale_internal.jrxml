@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sale_internal" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2bc3f60-bfd3-4491-9dc0-b1448540177d">
-	<property name="ireport.zoom" value="2.3579476910000126"/>
+	<property name="ireport.zoom" value="1.6105100000000083"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="97"/>
 	<parameter name="prm_amount_total" class="java.lang.String"/>
 	<parameter name="logo" class="java.lang.Object"/>
 	<parameter name="prm_id" class="java.lang.Integer"/>
@@ -113,21 +113,21 @@ order by so.id desc, sol."sequence" ;]]>
 				<textElement>
 					<font fontName="THSarabunNew" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[ถึง / To :]]></text>
+				<text><![CDATA[ถึง/To :]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="115" width="62" height="21" uuid="e2bf9e94-b787-4d97-80d0-e8cdef3d10dd"/>
 				<textElement>
 					<font fontName="THSarabunNew" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[เรียน / Attn :]]></text>
+				<text><![CDATA[เรียน/Attn :]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="353" y="95" width="64" height="21" uuid="1652323e-cc07-48ea-8f99-6b18d4281d09"/>
-				<textElement textAlignment="Right">
+				<reportElement x="342" y="95" width="64" height="21" uuid="1652323e-cc07-48ea-8f99-6b18d4281d09"/>
+				<textElement>
 					<font fontName="THSarabunNew" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[เลขที่ / NO : ]]></text>
+				<text><![CDATA[เลขที่/NO]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="493" y="95" width="32" height="21" uuid="b7eaf7dc-bd44-4f86-b809-322f402cac3e"/>
@@ -137,28 +137,28 @@ order by so.id desc, sol."sequence" ;]]>
 				<text><![CDATA[Rev : ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="353" y="115" width="64" height="21" uuid="906b56bb-0460-4a31-b8a0-45bd4e76f383"/>
-				<textElement textAlignment="Right">
+				<reportElement x="342" y="115" width="64" height="21" uuid="906b56bb-0460-4a31-b8a0-45bd4e76f383"/>
+				<textElement>
 					<font fontName="THSarabunNew" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[วันที่ / Date : ]]></text>
+				<text><![CDATA[วันที่/Date]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="136" width="135" height="20" uuid="0fa35ab7-3e53-48df-8ba6-ddd44d7a7b02"/>
 				<textElement>
 					<font fontName="THSarabunNew" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[ชื่อโครงการ / Project Name :]]></text>
+				<text><![CDATA[ชื่อโครงการ/Project Name :]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="342" y="135" width="75" height="21" uuid="408fe2b1-03ef-467b-bdd6-d83c64a5e668"/>
-				<textElement textAlignment="Right">
+				<textElement>
 					<font fontName="THSarabunNew" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[ยืนราคาถึงวันที่ : ]]></text>
+				<text><![CDATA[ยืนราคาถึงวันที่]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="419" y="95" width="76" height="21" uuid="09f842c8-5e8c-4933-9352-c5718222dec7"/>
+				<reportElement x="406" y="95" width="76" height="21" uuid="09f842c8-5e8c-4933-9352-c5718222dec7"/>
 				<textElement>
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="10"/>
@@ -166,7 +166,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{so_name}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="524" y="95" width="30" height="21" uuid="13e9914e-789e-411d-ad89-bb541d2f1b6b"/>
+				<reportElement x="516" y="95" width="30" height="21" uuid="13e9914e-789e-411d-ad89-bb541d2f1b6b"/>
 				<textElement>
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="10"/>
@@ -174,7 +174,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{revision}]]></textFieldExpression>
 			</textField>
 			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
-				<reportElement x="419" y="115" width="76" height="21" uuid="0c2fe372-7ffc-4b9d-8e8f-cfe14ce968d7"/>
+				<reportElement x="406" y="115" width="76" height="21" uuid="0c2fe372-7ffc-4b9d-8e8f-cfe14ce968d7"/>
 				<textElement>
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="10"/>
@@ -182,7 +182,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{date_order}]]></textFieldExpression>
 			</textField>
 			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
-				<reportElement x="419" y="135" width="85" height="21" uuid="b4347620-c372-41b0-a014-7b75f78c9f20"/>
+				<reportElement x="406" y="135" width="85" height="21" uuid="b4347620-c372-41b0-a014-7b75f78c9f20"/>
 				<textElement>
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="10"/>
@@ -190,7 +190,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{date_expire}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="43" y="95" width="320" height="21" uuid="6054746f-2deb-478f-a0a4-2f6aabbe3c5a"/>
+				<reportElement x="32" y="96" width="320" height="21" uuid="6054746f-2deb-478f-a0a4-2f6aabbe3c5a"/>
 				<textElement>
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="10"/>
@@ -198,7 +198,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{partner_name}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="54" y="115" width="304" height="21" uuid="a1c17023-1ab6-4708-8212-17fcec49a51c"/>
+				<reportElement x="48" y="116" width="304" height="21" uuid="a1c17023-1ab6-4708-8212-17fcec49a51c"/>
 				<textElement>
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="10"/>
@@ -206,7 +206,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{partner_ref}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="117" y="136" width="208" height="20" uuid="96a75a94-39e7-4716-99fc-24ef6f95ab2d"/>
+				<reportElement x="111" y="137" width="208" height="19" uuid="96a75a94-39e7-4716-99fc-24ef6f95ab2d"/>
 				<textElement>
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="10"/>
@@ -214,7 +214,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{project_name}]]></textFieldExpression>
 			</textField>
 			<image scaleImage="FillFrame">
-				<reportElement x="30" y="-40" width="273" height="156" uuid="a4a01297-fd3b-475b-87b4-9cf928fb9b93"/>
+				<reportElement x="-10" y="-60" width="273" height="156" uuid="a4a01297-fd3b-475b-87b4-9cf928fb9b93"/>
 				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
@@ -243,6 +243,27 @@ order by so.id desc, sol."sequence" ;]]>
 +"\n"
 +$F{company_street2}]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement x="401" y="95" width="10" height="21" uuid="0c929d86-a531-4dc6-985a-28313daf229c"/>
+				<textElement>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="116" width="10" height="21" uuid="dfbdba2e-6634-4d01-bdc0-40b3e1944ef9"/>
+				<textElement>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="135" width="10" height="21" uuid="33d160f8-2bf1-47b2-b2dc-cbd3a26d1658"/>
+				<textElement>
+					<font fontName="THSarabunNew" size="14" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
 		</band>
 	</pageHeader>
 	<columnHeader>
@@ -401,9 +422,9 @@ order by so.id desc, sol."sequence" ;]]>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="491" y="0" width="64" height="20" uuid="6beb0dd8-1668-47d5-9536-2af158791626"/>
-				<textElement textAlignment="Right">
+				<textElement>
 					<font fontName="THSarabunNew" size="14"/>
-					<paragraph rightIndent="10"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{remark}]]></textFieldExpression>
 			</textField>
