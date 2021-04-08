@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sale_internal_discount" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2bc3f60-bfd3-4491-9dc0-b1448540177d">
-	<property name="ireport.zoom" value="1.2100000000000073"/>
-	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="158"/>
+	<property name="ireport.zoom" value="2.5937424601000174"/>
+	<property name="ireport.x" value="15"/>
+	<property name="ireport.y" value="803"/>
 	<parameter name="prm_amount_total" class="java.lang.String"/>
 	<parameter name="logo" class="java.lang.Object"/>
 	<parameter name="prm_id" class="java.lang.Integer"/>
@@ -458,7 +458,7 @@ order by so.id desc, sol."sequence" ;]]>
 	<lastPageFooter>
 		<band height="251">
 			<staticText>
-				<reportElement x="3" y="95" width="90" height="20" uuid="7a553358-35d5-419c-830d-c965b1469957"/>
+				<reportElement x="3" y="96" width="90" height="20" uuid="7a553358-35d5-419c-830d-c965b1469957"/>
 				<textElement verticalAlignment="Bottom">
 					<font fontName="THSarabunNew" size="12" isBold="true" isUnderline="true"/>
 				</textElement>
@@ -580,7 +580,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{user_request}]]></textFieldExpression>
 			</textField>
 			<textField pattern="" isBlankWhenNull="true">
-				<reportElement x="78" y="96" width="120" height="20" uuid="7b38e4b7-899c-4b03-84b5-3294e670c7ee"/>
+				<reportElement x="78" y="97" width="120" height="20" uuid="7b38e4b7-899c-4b03-84b5-3294e670c7ee"/>
 				<textElement verticalAlignment="Bottom">
 					<font fontName="THSarabunNew" size="14" isBold="true"/>
 					<paragraph rightIndent="10"/>
