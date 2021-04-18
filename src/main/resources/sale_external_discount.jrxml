@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sale_external_discount" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2bc3f60-bfd3-4491-9dc0-b1448540177d">
-	<property name="ireport.zoom" value="2.5937424601000183"/>
-	<property name="ireport.x" value="635"/>
-	<property name="ireport.y" value="336"/>
+	<property name="ireport.zoom" value="1.46410000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="192"/>
 	<parameter name="prm_amount_total" class="java.lang.String"/>
 	<parameter name="prm_id" class="java.lang.Integer"/>
 	<parameter name="logo" class="java.lang.Object"/>
@@ -401,7 +401,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<line>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="7517e959-b4b1-4b55-9802-ae1c6d6901a1"/>
 			</line>
-			<textField isBlankWhenNull="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="32" y="0" width="68" height="20" uuid="b34873af-4893-49df-8a39-fa7292467cb4"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="14"/>
@@ -458,6 +458,24 @@ order by so.id desc, sol."sequence" ;]]>
 			</textField>
 		</band>
 	</detail>
+	<pageFooter>
+		<band height="20">
+			<textField evaluationTime="Report">
+				<reportElement x="493" y="0" width="40" height="20" uuid="3d3640b6-64d0-4f71-b5ea-8c7ff10cb18f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="THSarabunNew" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="0" width="80" height="20" uuid="687c5213-6c54-4e5c-b6d9-e9309d3610c8"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="THSarabunNew" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
 	<lastPageFooter>
 		<band height="273">
 			<staticText>
@@ -572,7 +590,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{amount_untaxed}]]></textFieldExpression>
 			</textField>
 			<textField pattern="">
-				<reportElement x="22" y="187" width="120" height="20" uuid="e6eedb52-2d12-40e0-a3da-820e0ca73757"/>
+				<reportElement x="0" y="187" width="153" height="20" uuid="e6eedb52-2d12-40e0-a3da-820e0ca73757"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="14" isBold="true"/>
 					<paragraph rightIndent="10"/>
@@ -596,7 +614,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$P{prm_amount_total}]]></textFieldExpression>
 			</textField>
 			<textField pattern="">
-				<reportElement x="22" y="202" width="120" height="20" uuid="980833df-403d-4f2a-b8ee-304d340b15cf"/>
+				<reportElement x="0" y="202" width="153" height="20" uuid="980833df-403d-4f2a-b8ee-304d340b15cf"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="14" isBold="true"/>
 					<paragraph rightIndent="10"/>
@@ -604,15 +622,15 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{user_function}]]></textFieldExpression>
 			</textField>
 			<textField pattern="">
-				<reportElement x="22" y="217" width="120" height="20" uuid="81a90034-c796-4852-87a7-da1894e6ac63"/>
+				<reportElement x="0" y="217" width="153" height="20" uuid="81a90034-c796-4852-87a7-da1894e6ac63"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="14" isBold="true"/>
 					<paragraph rightIndent="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{user_mobile}]]></textFieldExpression>
 			</textField>
-			<textField pattern="">
-				<reportElement x="22" y="232" width="120" height="20" uuid="333e1fb0-90d7-41d9-ac76-1800ed3a25de"/>
+			<textField isStretchWithOverflow="true" pattern="">
+				<reportElement x="0" y="232" width="153" height="20" uuid="333e1fb0-90d7-41d9-ac76-1800ed3a25de"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="14" isBold="true"/>
 					<paragraph rightIndent="10"/>
@@ -675,7 +693,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{note}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement x="370" y="1" width="1" height="255" uuid="f46d2db0-ae21-41cd-a43a-b1c1d95b71db"/>
+				<reportElement x="369" y="1" width="1" height="255" uuid="f46d2db0-ae21-41cd-a43a-b1c1d95b71db"/>
 			</line>
 			<line>
 				<reportElement x="369" y="135" width="186" height="1" uuid="fc85082c-0c91-40a0-8e33-355677c18fc1"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sale_internal_discount" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2bc3f60-bfd3-4491-9dc0-b1448540177d">
-	<property name="ireport.zoom" value="2.5937424601000174"/>
-	<property name="ireport.x" value="521"/>
-	<property name="ireport.y" value="384"/>
+	<property name="ireport.zoom" value="1.7715610000000115"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="326"/>
 	<parameter name="prm_amount_total" class="java.lang.String"/>
 	<parameter name="logo" class="java.lang.Object"/>
 	<parameter name="prm_id" class="java.lang.Integer"/>
@@ -37,7 +37,8 @@
 	t.street company_street,
 	t.street2 company_street2,
 	t.phone company_phone,
-	t.email company_email
+	t.email company_email,
+	ctlead.name lead_name
 from sale_order so
 inner join sale_order_line sol on (sol.order_id = so.id)
 left join account_payment_term apt on (apt.id = so.payment_term_id)
@@ -47,6 +48,9 @@ left join res_partner rp on (rp.id = so.partner_id)
 left join res_users ru on (ru.id = so.user_id)
 left join res_partner rp_users on (rp_users.id = ru.partner_id)
 left join project_project project on (project.id = so.project_id)
+left join crm_team ct on (ct.id = ru.sale_team_id)
+left join res_users ctu on (ctu.id = ct.user_id)
+left join res_partner ctlead on (ctlead.id = ctu.partner_id)
 inner join (select * from res_partner where id = 1) t on (t.id = 1)
 where so.id = $P{prm_id}
 order by so.id desc, sol."sequence" ;]]>
@@ -77,6 +81,7 @@ order by so.id desc, sol."sequence" ;]]>
 	<field name="company_street2" class="java.lang.String"/>
 	<field name="company_phone" class="java.lang.String"/>
 	<field name="company_email" class="java.lang.String"/>
+	<field name="lead_name" class="java.lang.String"/>
 	<variable name="so_name_1" class="java.lang.Integer" resetType="Page" calculation="Count">
 		<variableExpression><![CDATA[$F{so_name}]]></variableExpression>
 	</variable>
@@ -398,7 +403,7 @@ order by so.id desc, sol."sequence" ;]]>
 			<line>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="7517e959-b4b1-4b55-9802-ae1c6d6901a1"/>
 			</line>
-			<textField isBlankWhenNull="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="32" y="0" width="68" height="20" uuid="b34873af-4893-49df-8a39-fa7292467cb4"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="14"/>
@@ -455,6 +460,24 @@ order by so.id desc, sol."sequence" ;]]>
 			</textField>
 		</band>
 	</detail>
+	<pageFooter>
+		<band height="20">
+			<textField evaluationTime="Report">
+				<reportElement x="493" y="0" width="40" height="20" uuid="ff5c2f83-919b-4c3c-bc82-c6f7b86e635d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="THSarabunNew" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="0" width="80" height="20" uuid="0a84ec74-2f6d-4d05-9a10-1774c2a542a4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="THSarabunNew" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
 	<lastPageFooter>
 		<band height="251">
 			<staticText>
@@ -500,7 +523,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<text><![CDATA[หมายเหตุ :]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="64" y="199" width="100" height="18" uuid="b633b782-1742-43c6-9dc6-f85ad8f13382"/>
+				<reportElement x="54" y="199" width="120" height="18" uuid="b633b782-1742-43c6-9dc6-f85ad8f13382"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12" isBold="true"/>
 				</textElement>
@@ -513,18 +536,11 @@ order by so.id desc, sol."sequence" ;]]>
 				<reportElement x="353" y="198" width="120" height="1" uuid="8e084f6c-02d2-4aaa-909e-5ed64a6a5732"/>
 			</line>
 			<staticText>
-				<reportElement x="366" y="199" width="100" height="18" uuid="0b057fcb-28c9-4f40-b6a9-50d1f0436cae"/>
+				<reportElement x="353" y="199" width="120" height="18" uuid="0b057fcb-28c9-4f40-b6a9-50d1f0436cae"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12" isBold="true"/>
 				</textElement>
-				<text><![CDATA[ผู้ขออนุมัติ]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="366" y="212" width="100" height="18" uuid="e0e8e877-831d-428d-a56e-5b86e5c5f600"/>
-				<textElement textAlignment="Center">
-					<font fontName="THSarabunNew" size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Manager Oat]]></text>
+				<text><![CDATA[ผู้อนุมัติ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="236" width="555" height="15" uuid="9f6b6783-1cea-476c-832c-0824367859a2"/>
@@ -663,6 +679,14 @@ order by so.id desc, sol."sequence" ;]]>
 			<line>
 				<reportElement x="371" y="56" width="185" height="1" uuid="ba8ef18b-ae0b-45c6-979a-38583032315d"/>
 			</line>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="353" y="212" width="120" height="20" uuid="27e5fe4b-876a-493a-a757-490f698cd869"/>
+				<textElement textAlignment="Center">
+					<font fontName="THSarabunNew" size="14" isBold="true"/>
+					<paragraph rightIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lead_name}]]></textFieldExpression>
+			</textField>
 		</band>
 	</lastPageFooter>
 </jasperReport>
