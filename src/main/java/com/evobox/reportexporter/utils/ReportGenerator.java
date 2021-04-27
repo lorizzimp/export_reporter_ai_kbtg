@@ -83,12 +83,14 @@ public class ReportGenerator {
     public byte[] getReportPDF(String jasperReportName, Map<String, Object> parameters) {
 
         try (InputStream in = getClass().getResourceAsStream(String.format(FILE_JRXML, jasperReportName))) {
+        	log.warn("found report file.");
             JasperReport jsRpt = JasperCompileManager.compileReport(in);
             JasperPrint jasperPrint = JasperFillManager.fillReport(jsRpt, parameters,
                     getConnection());
             return getByteReport(jasperPrint);
         } catch (JRException | IOException | SQLException e) {
             e.printStackTrace();
+            log.error(e.getMessage(), e);
         }
         return new byte[0];
     }
@@ -114,7 +116,7 @@ public class ReportGenerator {
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUsername("odoo");
         dataSource.setPassword("odoo");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/okontek");
+        dataSource.setUrl("jdbc:postgresql://192.168.1.13:5432/okontek");
         return dataSource.getConnection();
     }
 }
