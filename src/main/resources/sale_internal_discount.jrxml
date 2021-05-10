@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sale_internal_discount" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2bc3f60-bfd3-4491-9dc0-b1448540177d">
 	<property name="ireport.zoom" value="1.7715610000000115"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="326"/>
+	<property name="ireport.y" value="0"/>
 	<parameter name="prm_amount_total" class="java.lang.String"/>
 	<parameter name="logo" class="java.lang.Object"/>
 	<parameter name="prm_id" class="java.lang.Integer"/>
@@ -109,8 +109,8 @@ order by so.id desc, sol."sequence" ;]]>
 	</background>
 	<pageHeader>
 		<band height="156" splitType="Stretch">
-			<image scaleImage="FillFrame">
-				<reportElement x="-10" y="-60" width="220" height="156" uuid="a4a01297-fd3b-475b-87b4-9cf928fb9b93"/>
+			<image scaleImage="RealSize">
+				<reportElement x="-6" y="-57" width="150" height="156" uuid="a4a01297-fd3b-475b-87b4-9cf928fb9b93"/>
 				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
 			</image>
 			<staticText>

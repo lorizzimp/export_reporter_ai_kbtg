@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sale_external" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2bc3f60-bfd3-4491-9dc0-b1448540177d">
 	<property name="ireport.zoom" value="1.6105100000000079"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="119"/>
+	<property name="ireport.y" value="0"/>
 	<parameter name="prm_amount_total" class="java.lang.String"/>
 	<parameter name="logo" class="java.lang.Object"/>
 	<parameter name="prm_id" class="java.lang.Integer"/>
@@ -216,10 +216,6 @@ order by so.id desc, sol."sequence" ;]]>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{project_name}]]></textFieldExpression>
 			</textField>
-			<image scaleImage="FillFrame">
-				<reportElement x="-10" y="-60" width="220" height="156" uuid="a4a01297-fd3b-475b-87b4-9cf928fb9b93"/>
-				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
-			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="348" y="0" width="207" height="25" uuid="1d98c885-d960-4625-856f-ee8762934fe8"/>
 				<textElement>
@@ -267,6 +263,10 @@ order by so.id desc, sol."sequence" ;]]>
 				</textElement>
 				<text><![CDATA[:]]></text>
 			</staticText>
+			<image scaleImage="RealSize">
+				<reportElement x="-6" y="-57" width="150" height="156" uuid="f39107da-cddb-4741-917c-5ebda3e809d5"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
 		</band>
 	</pageHeader>
 	<columnHeader>
@@ -496,7 +496,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<text><![CDATA[หมายเหตุ :]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="31" y="140" width="100" height="18" uuid="b633b782-1742-43c6-9dc6-f85ad8f13382"/>
+				<reportElement x="0" y="140" width="150" height="18" uuid="b633b782-1742-43c6-9dc6-f85ad8f13382"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12" isBold="true" pdfFontName="THSarabunNew" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
