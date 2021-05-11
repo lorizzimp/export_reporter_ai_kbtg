@@ -38,6 +38,17 @@
 		    <groupId>net.sf.jasperreports</groupId>
 		    <artifactId>jasperreports</artifactId>
 		    <version>5.6.1</version>
+		    <exclusions>
+				<exclusion>
+				<groupId>eclipse</groupId>
+				<artifactId>jdtcore</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jdt</groupId>
+			<artifactId>core</artifactId>
+			<version>3.1.1</version>
 		</dependency>
 		<dependency>
             <groupId>org.springframework.boot</groupId>

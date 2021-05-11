@@ -116,7 +116,7 @@ public class ReportGenerator {
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUsername("odoo");
         dataSource.setPassword("odoo");
-        dataSource.setUrl("jdbc:postgresql://192.168.1.13:5432/okontek");
+        dataSource.setUrl("jdbc:postgresql://localhost:5433/okontek");
         return dataSource.getConnection();
     }
 }
