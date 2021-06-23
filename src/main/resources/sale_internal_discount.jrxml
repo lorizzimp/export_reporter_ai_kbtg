@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sale_internal_discount" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2bc3f60-bfd3-4491-9dc0-b1448540177d">
 	<property name="ireport.zoom" value="1.7715610000000115"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="48"/>
 	<parameter name="prm_amount_total" class="java.lang.String"/>
 	<parameter name="logo" class="java.lang.Object"/>
 	<parameter name="prm_id" class="java.lang.Integer"/>
@@ -277,112 +277,112 @@ order by so.id desc, sol."sequence" ;]]>
 	<columnHeader>
 		<band height="39" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="32" height="20" uuid="7cc6ed01-e3ac-4664-b3f9-ba6eacc06848"/>
+				<reportElement x="0" y="0" width="22" height="20" uuid="7cc6ed01-e3ac-4664-b3f9-ba6eacc06848"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[ลำดับ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="19" width="32" height="20" uuid="b5a65975-0f87-4113-ba1b-57fa99d6719d"/>
+				<reportElement x="0" y="19" width="22" height="20" uuid="b5a65975-0f87-4113-ba1b-57fa99d6719d"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[No]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="32" y="19" width="68" height="20" uuid="f301c696-e0c1-423e-97ca-026d5e98a977"/>
+				<reportElement x="21" y="19" width="57" height="20" uuid="f301c696-e0c1-423e-97ca-026d5e98a977"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[Part No.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="32" y="0" width="68" height="20" uuid="b00aec01-3a96-4207-922a-fd6ad5e00520"/>
+				<reportElement x="21" y="0" width="57" height="20" uuid="b00aec01-3a96-4207-922a-fd6ad5e00520"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[รหัส]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="100" y="19" width="203" height="20" uuid="8a6c6221-a904-43d8-8fd8-18d6af931680"/>
+				<reportElement x="77" y="19" width="225" height="20" uuid="8a6c6221-a904-43d8-8fd8-18d6af931680"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[Description]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="100" y="0" width="203" height="20" uuid="ed4426d0-8c98-4c87-a9d4-cb35e2c89402"/>
+				<reportElement x="77" y="0" width="225" height="20" uuid="ed4426d0-8c98-4c87-a9d4-cb35e2c89402"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[รายการ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="303" y="19" width="27" height="20" uuid="ca1007bd-9ef5-48be-a293-074de09b83ba"/>
+				<reportElement x="301" y="19" width="27" height="20" uuid="ca1007bd-9ef5-48be-a293-074de09b83ba"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[Qty]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="329" y="0" width="50" height="20" uuid="1930af42-2605-4053-a501-b63d767ea43d"/>
+				<reportElement x="327" y="0" width="64" height="20" uuid="1930af42-2605-4053-a501-b63d767ea43d"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[ราคา]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="329" y="19" width="50" height="20" uuid="cadcf942-f9e2-4aab-9786-553dcdf73ea8"/>
+				<reportElement x="327" y="19" width="64" height="20" uuid="cadcf942-f9e2-4aab-9786-553dcdf73ea8"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[Unit price]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="427" y="0" width="64" height="20" uuid="8373cdcd-0718-4c9e-bf4c-0a2e5f792c23"/>
+				<reportElement x="440" y="0" width="64" height="20" uuid="8373cdcd-0718-4c9e-bf4c-0a2e5f792c23"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[จำนวนเงิน]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="427" y="19" width="64" height="20" uuid="c9c85ecf-5cb3-4637-ab3e-b6ae9a687bcf"/>
+				<reportElement x="440" y="19" width="64" height="20" uuid="c9c85ecf-5cb3-4637-ab3e-b6ae9a687bcf"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[Amount]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="491" y="19" width="64" height="20" uuid="c1b78f7d-e9c1-4a77-a762-562b92d8ed92"/>
+				<reportElement x="503" y="19" width="52" height="20" uuid="c1b78f7d-e9c1-4a77-a762-562b92d8ed92"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[remarks]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="491" y="0" width="64" height="20" uuid="c0416eb9-20b3-4e70-86f5-378cef069031"/>
+				<reportElement x="503" y="0" width="52" height="20" uuid="c0416eb9-20b3-4e70-86f5-378cef069031"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[หมายเหตุ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="303" y="0" width="27" height="20" uuid="1a308065-e5cc-4067-a992-fe522e4335bc"/>
+				<reportElement x="301" y="0" width="27" height="20" uuid="1a308065-e5cc-4067-a992-fe522e4335bc"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[จำนวน]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="378" y="0" width="50" height="20" uuid="07e4917a-b3cf-4b01-8931-edfceabbc58f"/>
+				<reportElement x="390" y="0" width="51" height="20" uuid="07e4917a-b3cf-4b01-8931-edfceabbc58f"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
 				<text><![CDATA[ส่วนลด]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="378" y="19" width="50" height="20" uuid="46a5b1bc-a357-42e5-ac9e-7c4c66fab1ab"/>
+				<reportElement x="390" y="19" width="51" height="20" uuid="46a5b1bc-a357-42e5-ac9e-7c4c66fab1ab"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="12"/>
 				</textElement>
@@ -393,7 +393,7 @@ order by so.id desc, sol."sequence" ;]]>
 	<detail>
 		<band height="20" splitType="Stretch">
 			<textField>
-				<reportElement x="0" y="0" width="32" height="20" uuid="d89d143d-fe60-4e97-9b46-1b48da6525b1"/>
+				<reportElement x="0" y="0" width="22" height="20" uuid="d89d143d-fe60-4e97-9b46-1b48da6525b1"/>
 				<textElement textAlignment="Right">
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="10"/>
@@ -401,10 +401,10 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="7517e959-b4b1-4b55-9802-ae1c6d6901a1"/>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="0" width="555" height="1" uuid="7517e959-b4b1-4b55-9802-ae1c6d6901a1"/>
 			</line>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="32" y="0" width="68" height="20" uuid="b34873af-4893-49df-8a39-fa7292467cb4"/>
+				<reportElement x="21" y="0" width="57" height="20" uuid="b34873af-4893-49df-8a39-fa7292467cb4"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph leftIndent="5"/>
@@ -412,15 +412,15 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{product_code}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement x="100" y="0" width="203" height="20" uuid="909c0cb7-cfd3-42d2-bc6d-9f621dfc8bbc"/>
+				<reportElement x="77" y="0" width="225" height="20" uuid="909c0cb7-cfd3-42d2-bc6d-9f621dfc8bbc"/>
 				<textElement>
-					<font fontName="THSarabunNew" size="14"/>
+					<font fontName="THSarabunNew" size="12"/>
 					<paragraph leftIndent="5"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{product_description}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00">
-				<reportElement x="329" y="0" width="50" height="20" uuid="15db42b1-47ae-4ce1-8497-c3bf48c239b6"/>
+				<reportElement x="327" y="0" width="64" height="20" uuid="15db42b1-47ae-4ce1-8497-c3bf48c239b6"/>
 				<textElement textAlignment="Right">
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="3"/>
@@ -428,7 +428,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{price_unit}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00">
-				<reportElement x="427" y="0" width="64" height="20" uuid="2b6e2216-f778-427c-b38c-dd742d45f30d"/>
+				<reportElement x="440" y="0" width="64" height="20" uuid="2b6e2216-f778-427c-b38c-dd742d45f30d"/>
 				<textElement textAlignment="Right">
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="3"/>
@@ -436,7 +436,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{price_subtotal}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="491" y="0" width="64" height="20" uuid="6beb0dd8-1668-47d5-9536-2af158791626"/>
+				<reportElement x="503" y="0" width="52" height="20" uuid="6beb0dd8-1668-47d5-9536-2af158791626"/>
 				<textElement>
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph leftIndent="5"/>
@@ -444,14 +444,14 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$F{remark}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0">
-				<reportElement x="303" y="0" width="27" height="20" uuid="8b41a466-464b-48e0-9bcf-79eb069419a1"/>
+				<reportElement x="301" y="0" width="27" height="20" uuid="8b41a466-464b-48e0-9bcf-79eb069419a1"/>
 				<textElement textAlignment="Center">
 					<font fontName="THSarabunNew" size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00">
-				<reportElement x="378" y="0" width="50" height="20" uuid="501588a2-a66b-40a4-8c52-63504471e71a"/>
+				<reportElement x="390" y="0" width="51" height="20" uuid="501588a2-a66b-40a4-8c52-63504471e71a"/>
 				<textElement textAlignment="Right">
 					<font fontName="THSarabunNew" size="14"/>
 					<paragraph rightIndent="3"/>
