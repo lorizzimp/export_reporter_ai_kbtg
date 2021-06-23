@@ -401,7 +401,7 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement positionType="FixRelativeToBottom" x="0" y="0" width="555" height="1" uuid="7517e959-b4b1-4b55-9802-ae1c6d6901a1"/>
+				<reportElement x="0" y="0" width="555" height="1" uuid="7517e959-b4b1-4b55-9802-ae1c6d6901a1"/>
 			</line>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="21" y="0" width="57" height="20" uuid="b34873af-4893-49df-8a39-fa7292467cb4"/>
