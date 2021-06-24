@@ -1,5 +1,6 @@
 package com.evobox.reportexporter.controller;
 
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,7 +24,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ReportExporterController {
 	
-	public static Map<String, String > report = new HashMap<String, String>();
+	private Map<String, String > report;
 	
 	@GetMapping(value = "/sale")
 	public ResponseEntity<byte[]> getReport(@RequestParam Map<String, Object> param){
@@ -36,13 +37,16 @@ public class ReportExporterController {
 			param.put("prm_id", Integer.parseInt(param.get("prm_id").toString()));
 			
 			String reportName = "";
+			String filename = "";
 			if("internal".equals(param.get("type").toString())) {
+				filename = "sale_internal_"+param.get("cust_name").toString()+"_"+param.get("project_name").toString();
 				if("True".equals(param.get("have_discount").toString())) {
 					reportName = report.get("internal_discount");
 				}else {
 					reportName = report.get("internal");
 				}
 			}else {
+				filename = "Quotation_"+param.get("quo_number").toString()+"_"+param.get("cust_name").toString()+"_"+param.get("project_name").toString();
 				if("True".equals(param.get("have_discount").toString())) {
 					reportName = report.get("external_discount");
 				}else {
@@ -54,8 +58,8 @@ public class ReportExporterController {
 	
 	        HttpHeaders headers = new HttpHeaders();
 	        headers.setContentType(MediaType.APPLICATION_PDF);
-	        String filename = reportName+".pdf";
-	        headers.add("content-disposition", "inline; filename=" + filename);
+	        filename = filename+".pdf";
+	        headers.add("content-disposition", "inline; filename=" + URLEncoder.encode(filename, "UTF-8"));
 	        headers.setCacheControl("must-revalidate, post-check=0, pre-check=0");
 	        response = new ResponseEntity<>(contents, headers, HttpStatus.OK);
 		} catch (Exception e) {
@@ -65,6 +69,7 @@ public class ReportExporterController {
 	}
 	
 	private void prepare() {
+		report = new HashMap<>();
 		report.put("internal_discount", "sale_internal_discount");
     	report.put("internal", "sale_internal");
     	report.put("external_discount", "sale_external_discount");
