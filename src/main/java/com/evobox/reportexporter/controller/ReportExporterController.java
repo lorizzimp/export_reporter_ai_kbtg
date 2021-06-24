@@ -58,7 +58,7 @@ public class ReportExporterController {
 	
 	        HttpHeaders headers = new HttpHeaders();
 	        headers.setContentType(MediaType.APPLICATION_PDF);
-	        filename = filename+".pdf";
+	        filename = filename.replace(" ", "_")+".pdf";
 	        headers.add("content-disposition", "inline; filename=" + URLEncoder.encode(filename, "UTF-8"));
 	        headers.setCacheControl("must-revalidate, post-check=0, pre-check=0");
 	        response = new ResponseEntity<>(contents, headers, HttpStatus.OK);
