@@ -5,7 +5,6 @@ FROM openjdk:8-jdk-alpine
 RUN mkdir /db
 VOLUME /db
 
-
 VOLUME /tmp
 
 RUN apk add tzdata
