@@ -29,7 +29,7 @@ pipeline {
         stage('deploy') {
             steps{
                 script{
-                    sh 'sudo cp ./target/reportexporter.jar /home/ubuntu/reportexporter.jar'
+                    sh 'cp ./target/reportexporter.jar /home/ubuntu/backup/reportexporter.jar'
                     sh 'docker-compose build && docker-compose down && docker-compose up -d'
                 }
             }
