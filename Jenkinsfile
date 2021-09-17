@@ -33,7 +33,7 @@ pipeline {
                     sh 'cd /home/okontek/report_exporter/'
                     sh 'pwd'
                     sh 'whoami'
-                    sh '. restart_service.sh'
+                    sh '. /home/okontek/report_exporter/restart_service.sh'
                 }
             }
         }
