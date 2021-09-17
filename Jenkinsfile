@@ -29,6 +29,7 @@ pipeline {
         stage('deploy') {
             steps{
                 script{
+                	sh 'pwd'
                     sh 'cp ./target/reportexporter.jar /home/okontek/report_exporter/reportexporter.jar'
                     sh 'docker-compose build && docker-compose down && docker-compose up -d'
                 }
