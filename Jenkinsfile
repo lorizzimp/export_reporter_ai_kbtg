@@ -29,6 +29,7 @@ pipeline {
         stage('deploy') {
             steps{
                 script{
+                	sh 'sudo su'
                     sh 'cp ./target/reportexporter.jar /home/okontek/report_exporter/reportexporter.jar'
                     sh 'cd /home/okontek/report_exporter/'
                     sh 'pwd'
