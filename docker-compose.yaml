@@ -3,6 +3,6 @@ services:
   report_exporter_1:
     build: .
     ports:
-      - 8003:8070
+      - 8070:8070
     volumes:
       - "./logs:/logs"
