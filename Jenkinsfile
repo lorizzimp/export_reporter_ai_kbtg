@@ -33,7 +33,7 @@ pipeline {
                     sh 'cd /home/okontek/report_exporter/'
                     sh 'pwd'
                     sh 'whoami'
-                    sh 'docker-compose build && docker-compose down && docker-compose up -d'
+                    sh '. restart_service.sh'
                 }
             }
         }
