@@ -30,6 +30,9 @@ pipeline {
             steps{
                 script{
                     sh 'cp ./target/reportexporter.jar /home/okontek/report_exporter/reportexporter.jar'
+                    sh 'cd /home/okontek/report_exporter/'
+                    sh 'pwd'
+                    sh 'whoami'
                     sh 'docker-compose build && docker-compose down && docker-compose up -d'
                 }
             }
