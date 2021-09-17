@@ -34,6 +34,7 @@ pipeline {
                     sh 'cd /home/okontek/report_exporter/'
                     sh 'pwd'
                     sh 'whoami'
+                    sh 'docker-compose version'
                     sh '. /home/okontek/report_exporter/restart_service.sh'
                 }
             }
