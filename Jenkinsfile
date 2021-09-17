@@ -29,13 +29,7 @@ pipeline {
         stage('deploy') {
             steps{
                 script{
-                	sh 'sudo su'
-                    sh 'cp ./target/reportexporter.jar /home/okontek/report_exporter/reportexporter.jar'
-                    sh 'cd /home/okontek/report_exporter/'
-                    sh 'pwd'
-                    sh 'whoami'
-                    sh 'docker-compose version'
-                    sh '. /home/okontek/report_exporter/restart_service.sh'
+                	sh 'docker-compose build && docker-compose down && docker-compose up -d'
                 }
             }
         }
