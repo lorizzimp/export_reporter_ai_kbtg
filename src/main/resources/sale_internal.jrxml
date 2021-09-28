@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sale_internal" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2bc3f60-bfd3-4491-9dc0-b1448540177d">
 	<property name="ireport.zoom" value="2.593742460100018"/>
-	<property name="ireport.x" value="424"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="1632"/>
 	<parameter name="prm_amount_total" class="java.lang.String"/>
 	<parameter name="logo" class="java.lang.Object"/>
 	<parameter name="prm_id" class="java.lang.Integer"/>
@@ -89,9 +89,6 @@ order by so.id desc, sol."sequence" ;]]>
 		<band height="802" splitType="Stretch">
 			<line>
 				<reportElement x="0" y="156" width="555" height="1" uuid="1540867c-28b7-4918-a180-24e6d9c3d1af"/>
-			</line>
-			<line>
-				<reportElement x="0" y="195" width="555" height="1" uuid="8c3d3e7f-a8b1-4c5a-a529-d6c0fde0ce2c"/>
 			</line>
 			<line>
 				<reportElement x="0" y="156" width="1" height="630" uuid="d47710ac-7099-4ad4-a107-1aedde355a8a"/>
@@ -371,6 +368,9 @@ order by so.id desc, sol."sequence" ;]]>
 				</textElement>
 				<text><![CDATA[ราคา]]></text>
 			</staticText>
+			<line>
+				<reportElement x="0" y="38" width="555" height="1" uuid="0c6f7bb2-6fa2-4511-be75-f837b6f3e38c"/>
+			</line>
 		</band>
 	</columnHeader>
 	<detail>
@@ -384,7 +384,9 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement x="0" y="0" width="555" height="1" uuid="7517e959-b4b1-4b55-9802-ae1c6d6901a1"/>
+				<reportElement x="0" y="0" width="555" height="1" uuid="7517e959-b4b1-4b55-9802-ae1c6d6901a1">
+					<printWhenExpression><![CDATA[$V{PAGE_COUNT} > 1]]></printWhenExpression>
+				</reportElement>
 			</line>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="21" y="0" width="57" height="20" uuid="b34873af-4893-49df-8a39-fa7292467cb4"/>

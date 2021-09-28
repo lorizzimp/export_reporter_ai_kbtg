@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sale_external" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2bc3f60-bfd3-4491-9dc0-b1448540177d">
 	<property name="ireport.zoom" value="1.7715610000000088"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="605"/>
+	<property name="ireport.y" value="17"/>
 	<parameter name="prm_amount_total" class="java.lang.String"/>
 	<parameter name="logo" class="java.lang.Object"/>
 	<parameter name="prm_id" class="java.lang.Integer"/>
@@ -366,6 +366,9 @@ order by so.id desc, sol."sequence" ;]]>
 				</textElement>
 				<text><![CDATA[หมายเหตุ]]></text>
 			</staticText>
+			<line>
+				<reportElement x="0" y="38" width="555" height="1" uuid="4a6608d5-f55c-4e98-8836-d7c44bc4daab"/>
+			</line>
 		</band>
 	</columnHeader>
 	<detail>
@@ -379,7 +382,9 @@ order by so.id desc, sol."sequence" ;]]>
 				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement x="0" y="0" width="555" height="1" uuid="7517e959-b4b1-4b55-9802-ae1c6d6901a1"/>
+				<reportElement x="0" y="0" width="555" height="1" uuid="7517e959-b4b1-4b55-9802-ae1c6d6901a1">
+					<printWhenExpression><![CDATA[$V{PAGE_COUNT} > 1]]></printWhenExpression>
+				</reportElement>
 			</line>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="21" y="0" width="57" height="20" uuid="b34873af-4893-49df-8a39-fa7292467cb4"/>
